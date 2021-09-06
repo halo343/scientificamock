@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'game.ui'
 #
-# Created: Mon Sep  6 11:51:15 2021
+# Created: Mon Sep  6 12:41:50 2021
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,12 +26,14 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(634, 512)
-        MainWindow.setStyleSheet(_fromUtf8("background-color: rgb(0, 170, 255);"))
+        MainWindow.resize(636, 578)
+        MainWindow.setStyleSheet(_fromUtf8("background-color: rgb(0, 170, 255);\n"
+"font: 16pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(21, 44, 255);"))
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayoutWidget_2 = QtGui.QWidget(self.centralwidget)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(380, 10, 191, 341))
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(380, 10, 241, 351))
         self.verticalLayoutWidget_2.setObjectName(_fromUtf8("verticalLayoutWidget_2"))
         self.verticalLayout_2 = QtGui.QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_2.setMargin(0)
@@ -58,23 +60,29 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.btn_start)
         self.btn_guess = QtGui.QPushButton(self.horizontalLayoutWidget)
         self.btn_guess.setEnabled(False)
-        self.btn_guess.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
+        self.btn_guess.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);"))
         self.btn_guess.setObjectName(_fromUtf8("btn_guess"))
         self.horizontalLayout.addWidget(self.btn_guess)
         self.label = QtGui.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(80, 100, 121, 16))
+        self.label.setGeometry(QtCore.QRect(80, 100, 121, 31))
+        self.label.setStyleSheet(_fromUtf8("font: 16pt \"MS Shell Dlg 2\";"))
         self.label.setObjectName(_fromUtf8("label"))
         self.label_2 = QtGui.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(80, 230, 101, 16))
+        self.label_2.setGeometry(QtCore.QRect(80, 230, 101, 31))
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.lb_result = QtGui.QLabel(self.centralwidget)
-        self.lb_result.setGeometry(QtCore.QRect(100, 440, 481, 41))
-        self.lb_result.setStyleSheet(_fromUtf8("font: 6pt \"MS Shell Dlg 2\";"))
+        self.lb_result.setGeometry(QtCore.QRect(150, 440, 361, 91))
+        self.lb_result.setStyleSheet(_fromUtf8("font: 14pt \"MS Shell Dlg 2\";"))
         self.lb_result.setText(_fromUtf8(""))
         self.lb_result.setObjectName(_fromUtf8("lb_result"))
+        self.lb_digits = QtGui.QLabel(self.centralwidget)
+        self.lb_digits.setGeometry(QtCore.QRect(70, 0, 521, 51))
+        self.lb_digits.setText(_fromUtf8(""))
+        self.lb_digits.setObjectName(_fromUtf8("lb_digits"))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtGui.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 634, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 636, 31))
         self.menubar.setObjectName(_fromUtf8("menubar"))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtGui.QStatusBar(MainWindow)

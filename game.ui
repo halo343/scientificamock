@@ -6,15 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>634</width>
-    <height>512</height>
+    <width>636</width>
+    <height>578</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 170, 255);</string>
+   <string notr="true">background-color: rgb(0, 170, 255);
+font: 16pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(21, 44, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget_2">
@@ -22,8 +24,8 @@
      <rect>
       <x>380</x>
       <y>10</y>
-      <width>191</width>
-      <height>341</height>
+      <width>241</width>
+      <height>351</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -75,7 +77,8 @@
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 255, 255);</string>
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
        </property>
        <property name="text">
         <string>Guess</string>
@@ -90,8 +93,11 @@
       <x>80</x>
       <y>100</y>
       <width>121</width>
-      <height>16</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Password</string>
@@ -103,11 +109,40 @@
       <x>80</x>
       <y>230</y>
       <width>101</width>
-      <height>16</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>Guess</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_result">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>440</y>
+      <width>361</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_digits">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>521</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
    <zorder>verticalLayoutWidget_2</zorder>
@@ -115,14 +150,16 @@
    <zorder>lb_result</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
+   <zorder>lb_result</zorder>
+   <zorder>lb_digits</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>634</width>
-     <height>21</height>
+     <width>636</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
